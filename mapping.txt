@@ -1,0 +1,80 @@
+Scenario 1: I want to create a small size,script like program to perform a simple task.
+
+Concept to be used : shell script in your preffered shell.
+
+Scenerio 2: I want to create a container to store fixed size of elements.
+Concept to be used: array or std::array (to take advantage of built in fun.)
+
+scnerio 3: I want to non-fixed number of elements and I don't want to block consecutive locations in memory for the same.
+Concept to be used: std::list or your implementation of list.
+
+scnerio 3: I want to non-fixed number of elements and consecutive locations in memory for the same.
+Concept to be used: std::vector or your implementation of vector.
+
+Scenerio 5: I want to create a specific model representation of data to be used as refrence for storing instances of data.
+Concept to be used: classes or struct
+
+Scenario 6: I want the ability to create sub-types of my model type immediately ofr in future  for each subcategoery that needs to be added
+Concept to be used: Inheritance
+
+scnerio 7: I want to create an interface for an API to accept a type and all its subtypes as a parameter to the API.
+Concept to be used: Generalization with upcasting
+
+Scenerio 8: I want ot exedcute different logic for each subtype type passed to the function where parameter is Generalized types
+Concept to be used:
+        a) Method overriding with implementation only in derived classes
+        b) Method overriding with implementation only in base & derived classes both
+
+Scenerio 9: I want to decide how basic operators will behave when used with my specific data type.
+Concept to be used:operator overloading 
+
+Scenerio 10: I want to convert a pointer to a base class into a pointer to child class in such a way that if converse fails, i get an exception AT RUN TIME.
+Concept to be used: Dynamic cast
+
+Scenerio 11: I wnat to convert a pointer to a type to some other type in such a way if conversion fails, i can verify at compile TIME
+Concept to be used:static cast
+
+Scenerio 12: I want to manage resources allocated based on  scope of attached object's lifeline.
+Concept to be used: smart pointer
+
+Scenerio 13: I want to decide which special member fn will be avaliable or unavaliable for a data type
+Concept to be used: default and delete member fns.
+
+Scenerio 14: I want to store type erased behavoir in the form of a fn in a wrapper
+Concept to be used:std::function wrapper
+
+Scenario 15: I wnat to store a refrence as a value 
+Concept to be used: std::refrence wrapper
+
+Scenerio 16: I want to use composition in such a way if composed type(base clase) is instantiated, it should not take a null value of class
+Concept to be used: std::refrence wrapper for inner class
+
+Scenerio 17: 
+Concept to be used:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

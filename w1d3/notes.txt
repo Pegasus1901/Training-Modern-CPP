@@ -1,0 +1,62 @@
+IS A ,HAS A ....rule remember
+
+1. Composition
+2. Inheritance
+
+try to avoid multiple inheritance
+
+IS A -- relationship
+//why inheritance??- 1. Generalization
+                            Employee    BuisnessOwner   PrivateCompany
+                            common- payTax(){diff. for all 3 classes}
+                            to create a general class for different classes
+                     2. Specialization(Card{Specialization of card class into types}-> debit,credit,visiting...etc)
+
+to attach 5 types into one what to do
+we need to use upcasting for Generalization type of problems
+
+extend data types
+OR combine classes to one
+
+Extension- creating subclass,child,type,subtype.
+Generalization- refering,Generalizing type ,creating base class
+
+
+Association - two or more classes connected with each other without inheritance
+
+    Basic Association(PERFORMS A....relationship)
+        Bank Account        Bank Operation
+        Bank b1             Operation obj
+                Obj.widraw(Bank b);
+    Composition
+        HAS A relationship...
+        the lifetime of composing obj is lifetime of composed obj
+        A(Composed){Container}       b(Composing)
+        --A container contains B
+        --can be one to one OR one to many
+        --outer obj will destroy inner obj when out of scope
+    Aggrigation
+        Car<-----wheels
+        (1)         (4)
+        --HAS A relationship
+        --not mandatory if car obj is destroyed wheels also be destroyed
+        --can be one to one OR one to many
+        --Car cannot control lifetime of wheels/ deletion of obj but retaining subObj
+*************************DESIGN PATTERNS learning**********************************
+Gang of four--- Object Oriented design patterns
+
+refactor.guru// website
+
+**## UNIFORM INITLIZATION SYNTAX
+        -----demo1.cpp-----
+    Anything can be initlized using curly brckets
+
+CONSTRUCTOR DELIGATION
+one constructor A which takes 20 parameters and one B constructor takes 19 but 19 are same para.
+we can call the B in A and initlize remaining in the scope of fn.
+
+POLYMORPHISM
+doing something in more than one way
+
+ENCAPSULATION
+hiding the internal representation of obj from outside world is encapsulation

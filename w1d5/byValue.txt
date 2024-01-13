@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int Magic(int n1){
+    int ans= n1*100;
+    return ans;
+}
+
+int main(){
+    //data variable initilized with 20
+    int data =20;
+
+    //address of data can be determined because data is lvalue
+    cout<<"adderess"<< &data<<endl;
+
+    //rvalue stores the return "value" from Magic called with "data" passed ny value
+    int result= Magic(data);
+}

@@ -1,0 +1,16 @@
+
+
+eg- 2 class Employee and Buisness Owner with common behavoir PayTax
+
+A
+PayTax
+    -common behavoir
+
+B
+PayTax
+
+
+
+TaxPayer* ptr;(vptr address of pointer)
+
+ptr->PayTax(); A::PayTax OR B::PayTax

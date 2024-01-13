@@ -1,0 +1,7 @@
+a fn to find the cvv number of debit card for customer whose Id is provided as a parameter
+
+a fn to return  the expiry date of debit card whose cvv number matches with value given by user
+
+a fn to return a container of all "pointers" which point to customer with age above 50
+
+a fn to return debit card pointer for a customer whose ID is given as input parameter

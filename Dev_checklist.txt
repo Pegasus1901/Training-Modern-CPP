@@ -1,0 +1,43 @@
+#Developer Checklist
+
+At least 8 Should be known by a software Developer
+
+###Proficiency in at least 3 languages
+    a) system programming languages(c,cpp,rust)
+    b) scripting language : Python, lua or your preffered shell scripting
+    c) Object oriented programming language(java,kotlin,c++)
+###Linear Data Structures
+    a)List 
+    b)Vector
+    c)Array
+    d)Hash Table implementations*
+    1. Stack & Queue(priority queue, deque)
+###UML Diagrams
+    a)Class
+    b)Activity
+    c)Sequence
+    d)Use Case
+###Version Control
+    ex- Git using command line is great option
+### Use of command line
+    ex- Working with GNU utilities on a Unix/Linux system
+    *)GNU utilities must be mastered properly
+(*)###Non-Linear Data Structures
+    a) Tree(BST,BT,AVL,RB, N-nary tree, etc)
+    b) Graph (cyclic and acyclic graph, fully &partially connected graphs)
+(*)###Essential Algorithms
+    a)Linear Search,Binary Search, DFS, BFS, sorting Algorithms(bubble sort,merge sort,insertion sort, selection sort, quick sort, radix sort, heap sort)
+###Problem Solving Techniques
+    a)Brute Force
+    b)Divide & Connquer
+    c) Recurssion
+    d) Dynamic programming(involving memoization),BackTracking
+###Virtualizations
+    a)VMs & Hypervisors
+    b)Installing & Maintaining VM using a hypervisor (at least through GUI)
+    c)Theory of Virtualization
+    d)Networking in VM^
+###Design Patterns
+    a)Creation
+    b)Behavoiral
+    c)Structural
