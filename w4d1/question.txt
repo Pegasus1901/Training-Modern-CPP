@@ -1,0 +1,25 @@
+I want ot design an application to process10 recent transactions made by a user by fetching their details from data base
+
+Operation:
+Each transactions amount,time and reciept has to be printed to a log file
+
+Note- 1 transaction has no relatiblity with others ie all transactions are mutually execlusive
+
+every transaction has following state
+    [transaction time|amount|source|destination]
+
+// we use array here
+//we need stack baased on array
+
+Example 2
+
+we design an appln where a new data value is recieved at a fixed interval and gets added at the back of the data values so far.
+I want to process only the the oldest value from these value at a time and print the value on the console.
+
+I am not allowed to modify and for as value gets processed, it needs to be removed from the transaction pending set.
+
+//we use doubly linked list
+//we need linked list based on a queue
+
+Example 3 
+

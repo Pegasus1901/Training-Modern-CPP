@@ -1,13 +1,5 @@
 #include"Functionalities.h"
 
-std::function<float(Container&)>AverageSalary=[](Container& data){
-    float total=0.0f;
-    for (auto &ptr : data)
-    {
-        total+=ptr->salary();
-    }
-    return total;
-};
 std::function<float(Container&,int)> SalaryOfGivenId=[](Container& data,int id){
 
     float salary=0.0f;
@@ -21,5 +13,18 @@ std::function<float(Container&,int)> SalaryOfGivenId=[](Container& data,int id){
 };
 
 std::function<float(Container&)>AverageSalary=[](Container& data){
-    std::accumulate
+    if(data.empty()){
+        throw std::runtime_error("hi");
+    }
+
+    float result= std::accumulate(
+        data.begin(),
+        data.end(),
+        0.0f,
+        [](float current_result, Pointer& instance_of_data){
+            return current_result+instance_of_data->salary();
+        }
+    );
+    
+    return result/data.size();
 };

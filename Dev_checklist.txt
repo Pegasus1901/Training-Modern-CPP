@@ -41,3 +41,23 @@ At least 8 Should be known by a software Developer
     a)Creation
     b)Behavoiral
     c)Structural
+###Relational & Non Relational Database
+
+###Networking Fundamentals
+    a) ip address, port number, protocols (e.g TCP,UDP)
+    b) subnetting, masks, ISO-OSI layers
+    c) firewalls!
+###Containerization using a container management tool
+    a) container management commands
+    b) images (using & creating them)
+    c) Networking mode of the container(overlap with above)
+###Types of API & API concepts
+    a)REST API
+    b)SOAP API
+    c)RPC, gRPC, JSON_RPC
+    d)graphQL
+    e)use language such as- python or rust
+(Note: Networking fundamentals & Virtualization is a must)
+###Cloud Computing
+    a)SaaS,PaaS,etc
+    b)DNS,instance Creation, api routing, load balancing, real-time message processing queues
