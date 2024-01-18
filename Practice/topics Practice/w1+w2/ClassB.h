@@ -7,8 +7,9 @@ private:
     int balance;
     int cash;
 public:
-    ClassB()=defalult;
-    ~ClassB()=default;
+    ClassB()=default;
+    virtual void virTualFunction()=0;
+    virtual ~ClassB()=default;
 };
 
 #endif // CLASSB_H

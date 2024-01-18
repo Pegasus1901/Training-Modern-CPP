@@ -1,0 +1,61 @@
+unordered_map - hash table based data container
+map- trees based (usually self balancing)
+Unordered_set- hash table
+set- red black tree
+multimap- used when multiple values have to be stored with the same key attached to them
+multiset - same as multimap. It gives a sorted storage of elements
+eg. - 1,10,11,10,10,7,11    multiset= {1,7,10,10,10,11,11}
+
+
+
+----------------------------------------SUMMARY FROM WEEK 1 TO WEEK 4--------------------------------
+
+Data: representing employee ids for various employee
+
+    e1          e2          e3        e4
+[101|Aniket] [102,Prat] [202,kjl] [304,wqe]
+
+option 1: Array
+    -memory has to be reserved before adding elements
+    -size cannot change
+    -contiguous storage
+    -accessed via index
+    -constant time to add,remove,read,update using
+
+
+option 2: Vector
+    -we can increase no. of elements at any point.
+    -storage is contiguous.
+    -if there is no space avaliable adjacent to current memory allocated, all elements will be shifted.
+    -adding elements at the end of the vector, accessing an element for read, updating can all be performed via index position in constant time.
+    -memory can be reserved in advance in some implementation like STL.
+
+option 3: Linked List
+    -data will not always be contiguous
+    -for each new element to be added, a new node of data is creted by allocating memory
+    -since memory is not to be contigious,works well with large number of items
+    -operations have different time complexity(OBVOUSLY)
+    -data is stored in random memory where space is present
+
+option 4a: Hash Table With Key Value Pairs, Only 1 Value Per Key(Unordered Map)
+    -Amortised O(1)
+    -hashing based on hash function applied on keys determines bucket to store the value.
+    - eg- max rows for (modulus)%3 key is 3
+    - amortized cost of operations
+
+option 4b: Hash Table With Key Value Pairs, Multiple Value Per Key(Unordered Multimap)
+    -one key may be associated with multiple values
+    -amortized cost of operations
+
+option 5: Set With A Custom Comparison Logic Created Via A Comparator
+    -duplicates will not be allowed
+    -duplication is determined using equivalence principle
+
+option 6: Data In Stack Based On Some Type Of Container(std::stack)
+    -only one element will be avaliable for operation (LIFO order)
+    -underlying implementation can be decided prior to instantiation of stack
+    -accessing middle element of stack is not good practise
+
+
+
+

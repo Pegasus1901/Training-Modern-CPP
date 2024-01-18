@@ -1,0 +1,20 @@
+Pseudo code of average price of all cars from a container variants(type Car or Bike):
+
+search for the type of vehicle(either Car or Bike)
+take flag as 0 and sum as 0, average=0.0f
+if we get type as Car, then sum+=priceOfCar and flag++.
+Finally we get average as sum/flag.
+
+Time Complexity:
+Bubble sort technique can be resolved in (n^2+n)/2 access of elements
+
+This is quadratic order of growth with respect of n because 
+    for any value of N greater than 1, (n^2+n)/2 is never greater than n^2
+
+
+---------------------------------------------------------------------------------------------------------
+
+Terminal shortcuts:
+
+
+

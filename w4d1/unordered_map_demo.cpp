@@ -6,9 +6,6 @@ int main(){
         {101,"Prathmesh"},
         {102,"Aniket"}
     };
-
-
-
     
 
     std::cout<<"Employee with ID"<<umap[101]<<"\n";
