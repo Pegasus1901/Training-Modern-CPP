@@ -52,6 +52,8 @@ Concept to be used: std::refrence wrapper for inner class
 Scenerio 17: 
 Concept to be used:
 
+
+
 Scenario A : a function . I have input before creating thread, I dont want return value
 ANSWER: std::thread should be enough
  
@@ -68,7 +70,23 @@ Scenario E: A function, I have input ,I want to start thread using input I want 
 ANSWER: condition_variable based code using unique lock
 
 
-
+// THREAD SCENARIOS
+ 
+scenario 1 : A function. I have input before creating thread I don't want return value.
+answer : std::thread should be enough (Normal thread )
+ 
+scenario 2 : A function. I have input before creating thread I want return value.
+answer : use std::async without FUTURE INPUT but with a future for return
+ 
+scenario 3 : A function. I don't have input before creating thread I don't want return value. 
+answer : use std::async with FUTURE INPUT and future return type (could be void)
+ 
+scenario 4 : A function. I don't have input before creating thread I want return value.
+answer : use std::async with FUTURE INPUT and future return type
+ 
+scenario 5 : A function, I have input, I want to start thread using the input. I want 
+my function to some work but stop or block before completion and wait for some event to happen
+answer : condition variable based code using unique lock
 
 
 

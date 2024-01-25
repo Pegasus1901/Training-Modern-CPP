@@ -1,5 +1,4 @@
 Scenario 1: I want to create a small size,script like program to perform a simple task.
-
 Concept to be used : shell script in your preffered shell.
 
 Scenerio 2: I want to create a container to store fixed size of elements.
@@ -20,7 +19,7 @@ Concept to be used: Inheritance
 scnerio 7: I want to create an interface for an API to accept a type and all its subtypes as a parameter to the API.
 Concept to be used: Generalization with upcasting
 
-Scenerio 8: I want ot exedcute different logic for each subtype type passed to the function where parameter is Generalized types
+Scenerio 8: I want ot execute different logic for each subtype type passed to the function where parameter is Generalized types
 Concept to be used:
         a) Method overriding with implementation only in derived classes
         b) Method overriding with implementation only in base & derived classes both

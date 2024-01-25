@@ -9,9 +9,7 @@
 #include<functional>
 
 void InstantiateThread(
-    std::array<std::thread,5>&threadArr,
-    std::function<void(int,int)>f1,
-    std::array<int,5>& data
+    std::array<std::thread,5>&threadArr, std::function<void(int,int)>f1, std::array<int,5>& data
 ){
     auto itr =data.begin();
 

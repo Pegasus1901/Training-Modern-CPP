@@ -1,5 +1,16 @@
 #include"Functionalities.h"
 
+void CreateObjects(Container &data)
+{
+    data.emplace_back(
+        std::make_shared<Employee>(
+            101,
+            "Prath",
+            200.0f
+        )
+    );
+}
+
 std::function<float(Container&,int)> SalaryOfGivenId=[](Container& data,int id){
 
     float salary=0.0f;

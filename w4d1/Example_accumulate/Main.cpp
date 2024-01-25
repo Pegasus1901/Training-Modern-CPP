@@ -9,7 +9,7 @@ using namespace std::placeholders;
 
 int main(){
     Container data;
-
+    CreateObjects(data);
     auto fun1 = std::bind(SalaryOfGivenId, _1,101);
     fun1(data);
 }

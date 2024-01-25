@@ -17,8 +17,7 @@ int main(){
     auto f1=[&](int number,int idx){result[idx]=number*number;};
 
     std::array<std::thread,5> threadArr;
-
-    //iterator is a pointer
+ 
     auto itr =data.begin();
 
     // for (std::thread& t: threadArr)

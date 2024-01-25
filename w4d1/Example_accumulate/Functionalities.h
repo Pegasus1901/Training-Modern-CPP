@@ -14,7 +14,12 @@
 using Pointer= std::shared_ptr<Employee>;
 using Container = std::vector<Pointer>;
 
-extern std::function<float(Container&)> AverageSalary;
+void CreateObjects(Container& data);
+
+extern std::function<float(Container& data)> AverageSalary;
+
 extern std::function<float(Container&,int)> SalaryOfGivenId;
+
+extern std::function<float(Container&,std::string)> SalaryOfGivenName;
 
 #endif // FUNCTIONALITIES_H

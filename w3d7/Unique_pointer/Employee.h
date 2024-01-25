@@ -23,6 +23,8 @@ std::string name() const { return _name; }
 EmployeeType type() const { return _type; }
 
 float salary() const { return _salary; }
+
+friend std::ostream &operator<<(std::ostream &os, const Employee &rhs);
 };
 
 #endif // EMPLOYEE_H

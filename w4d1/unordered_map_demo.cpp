@@ -8,5 +8,5 @@ int main(){
     };
     
 
-    std::cout<<"Employee with ID"<<umap[101]<<"\n";
+    std::cout<<"Employee with ID "<<umap[101]<<"\n";
 }

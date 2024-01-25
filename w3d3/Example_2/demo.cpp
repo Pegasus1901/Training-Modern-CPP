@@ -44,6 +44,7 @@ void TakeInput(std::vector<int>& v1, int N){
 
         for (int i = 0; i < N; i++)
         {
+            std::cout<<"Enter Values = ";
             std::cin>>val;
             v1[i] = val;
         }
@@ -92,5 +93,9 @@ int main(){
             i.e- container of even numbers is found in option
         */
         std::cout<<even_numbers.value().size();
+
+        auto itr = even_numbers.value().begin();
+
+        std::cout <<"Vector Value = " << *itr;
     }
 }

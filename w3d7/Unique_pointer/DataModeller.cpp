@@ -14,6 +14,7 @@ void DataModeller::operator()()
         throw std::runtime_error("Not Found");
     }
     float total=0;
+    
     for (float price : _goodsPrices)
     {
         total+=price;
@@ -22,12 +23,20 @@ void DataModeller::operator()()
     std::cout << "Average price is = " << total/_goodsPrices.size()<<std::endl;
 }
 
+
 std::ostream &operator<<(std::ostream &os, const DataModeller &rhs) {
     os << "_instances: ";
     
-    std::visit([&](auto&& val){
-        os<<*val;
-    }, rhs._instances);
+//     std::visit([&](const auto&& val){
+//         os<<*val;
+//     }, rhs._instances);
+
+    // if(std::holds_alternative<BuisnessOwnerPointer>(rhs._instances)){
+    //     const BuisnessOwnerPointer& b = std::get<BuisnessOwnerPointer>(rhs._instances);
+    //     os<<*b;
+    // }
+
+    std::visit([&](auto && val){ os<<*val;},rhs._instances);
 
     os << " _goodsPrices: ";
 

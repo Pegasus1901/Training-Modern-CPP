@@ -57,10 +57,9 @@ void TotalSalary(const Container& data){
     }
     float total=0.0f;
 
-    for(auto& [k,v]: data){
-        total+=v->salary();
-    }
-    std::cout<<"Total salary: "<<total<<std::endl;
+    // for(auto& [k,v]: data){
+    //     total+=v->salary();
+    // }
 
 
 //////alternatively
@@ -70,10 +69,11 @@ void TotalSalary(const Container& data){
 
 
 //////alternatively
-    // for(const std::pair<int,Pointer>& ptr : data){
-    //     total+=ptr.second->salary();
-    // }
+    for(const std::pair<int,Pointer>& ptr : data){
+        total+=ptr.second->salary();
+    }
 
+    std::cout<<"Total salary: "<<total<<std::endl;
 //////alternatively
 //     float total_val=std::accumulate(data.begin(), data.end(),0.0f,[](float sum_till_current_val,const std::pair<int,Pointer>& row){
 //         return sum_till_current_val + row.second->salary();});

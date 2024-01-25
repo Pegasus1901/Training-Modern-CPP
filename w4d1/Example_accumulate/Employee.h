@@ -18,8 +18,6 @@ public:
     Employee& operator=(Employee&)=delete;
     Employee& operator=(Employee&&)=delete;
 
-    virtual void CalculateTax() =0;
-
     ~Employee()=default;
 
     int id() const { return _id; }

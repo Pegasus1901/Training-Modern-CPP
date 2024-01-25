@@ -17,12 +17,16 @@ int main(){
 
     arr[1]=std::thread(CallParenOperator, std::ref(data));
 
+    arr[2]=std::thread(TotalGoodsPrice, std::ref(data));
+
     for (std::thread& th : arr)
     {
         if(th.joinable()){
             th.join();
         }
     }
+
+    PrintDataOfMainContainer(data);
     
 
 }

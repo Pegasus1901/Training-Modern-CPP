@@ -24,7 +24,14 @@ int main()
     // ex 2- sum of all values
     std::cout << "total = " << std::accumulate(v1.begin(), v1.end(), 0) << "\n";
     //ex 3- product of all values
-    std::cout << "total = " << std::accumulate(v1.begin(), v1.end(), 1, [](int current_result,int item_from_container){return current_result*item_from_container;}) << "\n";
+    std::cout << "total = " << std::accumulate(
+                               v1.begin(),
+                               v1.end(),
+                               1,
+                               [](int current_result,int item_from_container){
+                                return current_result*item_from_container;
+                                }
+                            ) << "\n";
 
     return 0;
 }

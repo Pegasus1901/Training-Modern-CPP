@@ -27,6 +27,8 @@ float revenue() const { return _revenue; }
 std::string registeredBuisnessName() const { return _registered_buisness_name; }
 
 BuisnessType buisnessType() const { return _buisness_type; }
+
+friend std::ostream &operator<<(std::ostream &os, const BuisnessOwner &rhs);
 };
 
 #endif // BUISNESSOWNER_H

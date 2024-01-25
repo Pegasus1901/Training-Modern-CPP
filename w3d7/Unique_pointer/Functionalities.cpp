@@ -2,6 +2,9 @@
 #include "Employee.h"
 #include "DataModeller.h"
 
+std::mutex mt;
+
+
 void CreateObjects(Container& data)
 {
     data.emplace_back(std::make_unique<DataModeller>(
@@ -24,7 +27,7 @@ void CreateObjects(Container& data)
 }
 
 /*
-    This function will accept a container of dataModeller poiner
+    This function will accept a container of dataModeller pointer
         FOR EACH POINTER,   perform the following
 
         1. capture the instance refrence
@@ -45,7 +48,9 @@ void CalculateTaxPayable(const Container &data)
     for (const dataPointer& ptr : data)
     {
         const VariantType& val =ptr->instances();
-        if( std::holds_alternative<BuisnessOwner>(val)){
+        
+        if( std::holds_alternative<BuisnessOwnerPointer>(val)){
+
             const BuisnessOwnerPointer& p = std::get<BuisnessOwnerPointer>(val);
 
             // std::cout << 0.1f*( std::get<BuisnessOwner>(val) );
@@ -87,4 +92,42 @@ void CallParenOperator(const Container &data)
             ptr->operator()();
         }
     }
+}
+
+void TotalGoodsPrice(const Container &data)
+{
+    float total=0;
+    std::vector <float> goodsDataPriceVector;
+    for (const dataPointer& ptr : data)
+    {
+        std::lock_guard<std::mutex> lockGuard(mt);
+        goodsDataPriceVector = ptr.get()->goodsPrices();
+
+        for (const float&ptr : goodsDataPriceVector)
+        {
+            total+=ptr;
+        }
+        
+    }
+
+    std::lock_guard<std::mutex> lockGuard(mt);
+    std::cout << "Total Goods Price = " << total;
+
+    // Display goodsDataPriceVector elements
+    // for (const float& ptr : goodsDataPriceVector)
+    // {
+    //     std::lock_guard<std::mutex> lockGuard(mt);
+    //     std::cout<<"\nVector elements = " << ptr;
+    // }
+    
+}
+
+void PrintDataOfMainContainer(const Container &data)
+{
+    std::lock_guard<std::mutex> lockGuard(mt);
+    for (const dataPointer&ptr : data)
+    {
+        std::cout<<*ptr.get();
+    }
+    
 }
