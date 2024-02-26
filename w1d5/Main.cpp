@@ -15,7 +15,7 @@ int main()
 
         for (const Pointer& ptr : ans)
         {
-            std::cout<<"*ptr"<<'\n';
+            std::cout<<*ptr<<'\n';
         }
         
     }

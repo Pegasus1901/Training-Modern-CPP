@@ -1,5 +1,12 @@
-Scenario 1: I want to create a small size,script like program to perform a simple task.
 
+Scenerio A: Copy and create duplicate data value to preserve original value inside data and yet perform operations on the copy inside function
+Concept to be used: Call by Value
+
+Scenario B: I have "temporary integer which needs to be passed to function. Function would perform operations like modification on the data and return the modified value.
+Concept to be used : a) Pass rvalue refrence and return by value
+                     b) Pass by value and return by value
+
+Scenario 1: I want to create a small size,script like program to perform a simple task.
 Concept to be used : shell script in your preffered shell.
 
 Scenerio 2: I want to create a container to store fixed size of elements.
@@ -49,8 +56,7 @@ Concept to be used: std::refrence wrapper
 Scenerio 16: I want to use composition in such a way if composed type(base clase) is instantiated, it should not take a null value of class
 Concept to be used: std::refrence wrapper for inner class
 
-Scenerio 17: 
-Concept to be used:
+
 
 
 

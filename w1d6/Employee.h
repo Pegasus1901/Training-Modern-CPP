@@ -6,7 +6,7 @@ private:
 int _id;
 public:
     Employee(int id):_id(id){};
-    ~Employee();
+    ~Employee()=default;
 
     int id() const { return _id; }
 

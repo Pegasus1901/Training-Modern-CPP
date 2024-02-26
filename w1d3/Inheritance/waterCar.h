@@ -4,14 +4,15 @@
 class WaterCar
 {
 private:
-    int battery{90};
-    float horsPower{3000.0f};
+    int _battery{0};
+    float _horsPower{3000.0f};
 public:
     WaterCar()=delete;
     WaterCar(WaterCar&)=delete;
     WaterCar(WaterCar&&)=delete;
     WaterCar operator=(WaterCar&)=delete;
     WaterCar operator=(WaterCar&&)=delete;
+    WaterCar (int battery);
 
     ~WaterCar()=default;
 };

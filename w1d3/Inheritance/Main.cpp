@@ -8,7 +8,8 @@ int main()
     // AcceptData(ptr);
     ShowDetails(ptr);
 
-    // ptr[0]->CalculateRegistrationCharge();
+    std::cout<<'\n';
+    ptr[0]->CalculateRegistrationCharge();
 
     std::cout << "Average = " << CalculateAverage(ptr) << std::endl;
     std::cout<< "Total No of Cars = "<<ptr.size()<<std::endl;
